@@ -1,0 +1,26 @@
+package q3;
+
+abstract class Shape {
+    // Abstract method not have body
+    public abstract void draw();
+
+    public void display() {
+        System.out.println("Displaying shape");
+    }
+}
+
+
+class Circle extends Shape {
+    @Override
+    public void draw() {
+        System.out.println("Drawing circle");
+    }
+}
+
+class Rectangle extends Shape {
+    @Override
+    public void draw() {
+        System.out.println("Drawing rectangle");
+    }
+}
+
