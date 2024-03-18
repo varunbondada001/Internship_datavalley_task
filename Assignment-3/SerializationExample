@@ -1,0 +1,23 @@
+package assignment;
+import java.io.*;
+public class SerializationExample {
+    public static void main(String[] args) {
+        
+        Customer customer = new Customer(1, "John Doe", "1234567890", "123 Main St, Anytown");
+
+        serializeCustomer(customer);
+    }
+
+    private static void serializeCustomer(Customer customer) {
+        try {
+            FileOutputStream fileOut = new FileOutputStream("JavaObject.txt");
+            ObjectOutputStream objectOut = new ObjectOutputStream(fileOut);
+            objectOut.writeObject(customer);
+            objectOut.close();
+            fileOut.close();
+            System.out.println("Customer object serialized and saved to JavaObject.txt");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
