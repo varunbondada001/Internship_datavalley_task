@@ -1,0 +1,25 @@
+package q3interface;
+
+interface Shape {
+    
+    void draw();
+
+   
+    default void display() {
+        System.out.println("Displaying shape");
+    }
+}
+
+class Circle implements Shape {
+    @Override
+    public void draw() {
+        System.out.println("Drawing circle");
+    }
+}
+
+class Rectangle implements Shape {
+    @Override
+    public void draw() {
+        System.out.println("Drawing rectangle");
+    }
+}
