@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Information Form</title>
+</head>
+<body>
+    <h2>Customer Information Form</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="phone">Contact Phone No:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+        
+        <label for="days">Preferred Days of Purchasing:</label><br>
+        <input type="checkbox" id="monday" name="days" value="Monday">
+        <label for="monday">Monday</label><br>
+        <input type="checkbox" id="tuesday" name="days" value="Tuesday">
+        <label for="tuesday">Tuesday</label><br>
+        <input type="checkbox" id="wednesday" name="days" value="Wednesday">
+        <label for="wednesday">Wednesday</label><br>
+        <input type="checkbox" id="thursday" name="days" value="Thursday">
+        <label for="thursday">Thursday</label><br>
+        <input type="checkbox" id="friday" name="days" value="Friday">
+        <label for="friday">Friday</label><br>
+        <input type="checkbox" id="saturday" name="days" value="Saturday">
+        <label for="saturday">Saturday</label><br>
+        <input type="checkbox" id="sunday" name="days" value="Sunday">
+        <label for="sunday">Sunday</label><br><br>
+        
+        <label for="favorite_item">Favorite Item:</label>
+        <select id="favorite_item" name="favorite_item">
+            <option value="electronics">Electronics</option>
+            <option value="clothing">Clothing</option>
+            <option value="groceries">Groceries</option>
+            <option value="toys">Toys</option>
+            <option value="home_goods">Home Goods</option>
+        </select><br><br>
+        
+        <label for="suggestions">Suggestions:</label><br>
+        <textarea id="suggestions" name="suggestions" rows="4" cols="50"></textarea><br><br>
+        
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
